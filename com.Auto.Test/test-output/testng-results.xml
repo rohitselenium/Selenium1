@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22227" started-at="2019-08-20T05:04:54Z" finished-at="2019-08-20T05:05:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22227" started-at="2019-08-20T05:04:54Z" finished-at="2019-08-20T05:05:17Z">
+      <class name="com.Flipkart.Test.TestLogin">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Flipkart.Test.TestLogin@61443d8f]" name="setup" is-config="true" duration-ms="8394" started-at="2019-08-20T10:34:54Z" finished-at="2019-08-20T10:35:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.Flipkart.Test.TestLogin@61443d8f]" name="Login" duration-ms="2300" started-at="2019-08-20T10:35:03Z" finished-at="2019-08-20T10:35:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Search()[pri:0, instance:com.Flipkart.Test.TestLogin@61443d8f]" name="Search" duration-ms="1416" started-at="2019-08-20T10:35:05Z" finished-at="2019-08-20T10:35:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="FAIL" signature="CheckModel()[pri:0, instance:com.Flipkart.Test.TestLogin@61443d8f]" name="CheckModel" duration-ms="10089" started-at="2019-08-20T10:35:07Z" finished-at="2019-08-20T10:35:17Z">
+          <exception class="org.openqa.selenium.json.JsonException">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN2274450', ip: '10.150.231.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN2274450', ip: '10.150.231.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at com.Flipkart.Java.MobileDescription.mouseover(MobileDescription.java:32)
+	at com.Flipkart.Test.TestLogin.CheckModel(TestLogin.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN2274450', ip: '10.150.231.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 33 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	... 45 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: div._2_AcLJ
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN2274450', ip: '10.150.231.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 6168, moz:profile: C:\Users\rohranja\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 7cffcf00-687c-4a04-a3db-fc05ede610fd
+*** Element info: {Using=css selector, value=div._2_AcLJ}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	... 50 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckModel -->
+        <test-method status="PASS" signature="clean()[pri:0, instance:com.Flipkart.Test.TestLogin@61443d8f]" name="clean" is-config="true" duration-ms="0" started-at="2019-08-20T10:35:17Z" finished-at="2019-08-20T10:35:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clean -->
+      </class> <!-- com.Flipkart.Test.TestLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
